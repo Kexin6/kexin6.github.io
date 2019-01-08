@@ -1,1 +1,1 @@
-[demo](http://cassiekexinli.com/mainPage.html)
+(http://cassiekexinli.com/mainPage.html)
