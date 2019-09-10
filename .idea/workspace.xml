@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdbaa616-af92-4411-9d8f-5e15e6ce95fc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Education.html" beforeDir="false" afterPath="$PROJECT_DIR$/Education.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/Experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
-    </list>
+    <list default="true" id="bdbaa616-af92-4411-9d8f-5e15e6ce95fc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,8 +17,8 @@
       <file leaf-file-name="mainPage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
+            <state relative-caret-position="58">
+              <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -154,8 +148,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-23" />
-    <option name="y" value="189" />
+    <option name="x" value="88" />
+    <option name="y" value="595" />
     <option name="width" value="1440" />
     <option name="height" value="790" />
   </component>
@@ -221,15 +215,16 @@
       <workItem from="1553997908140" duration="736000" />
       <workItem from="1557003579913" duration="3333000" />
       <workItem from="1566990498615" duration="472000" />
-      <workItem from="1568077594236" duration="564000" />
+      <workItem from="1568077594236" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31061000" />
+    <option name="totallyTimeSpent" value="31099000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-23" y="189" width="1440" height="790" extended-state="0" />
+    <frame x="277" y="243" width="1440" height="790" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11388889" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1050,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
+        <state relative-caret-position="58">
+          <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
         </state>
       </provider>
     </entry>
