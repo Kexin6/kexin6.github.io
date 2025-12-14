@@ -4,9 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Kexin Li</title>
 </head>
@@ -24,32 +26,24 @@
                 <a class="nav-link" href="mainPage.html">Home <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Education.html">Education <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Publication.html">Publication <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Experience.html">Experience <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Project.html">Project <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Education.html">Education</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
+                <a class="nav-link" href="Publication.html">Publication</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
+                <a class="nav-link" href="Experience.html">Experience</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Contact.html">Contact <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Project.html">Project</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
             </li>
 
     </div>
@@ -64,10 +58,10 @@
                     Kexin Li (Cassie) 李可欣
                 </h3>
                 <h6>
-                    How to pronounce my first name: <a href="https://www.howtopronounce.com/kexin" target="_blank">kě xīn </a>
+                    How to pronounce my first name: <a href="https://www.howtopronounce.com/kexin" target="_blank" rel="noopener noreferrer">kě xīn </a>
                 </h6>
                 <h5>
-                    Master of Applied Science at University of Toronto
+                    PhD Student in Computer Engineering at University of Toronto
                 </h5>
                 <!--<h5>-->
                     <!--Research Intern at Tsinghua University-->
@@ -82,74 +76,112 @@
         </div>
         <div class="col-sm" style="padding-top: 4%">
             <h3>Hi!</h3>
-            <div>Welcome to my personal homepage. This is Kexin Li (Cassie). I am an upcoming computer engineering Master student at the University of Toronto. My research focus is on computer systems vulnerability and security. I am proficient in C/C++.</div>
-            <div style="padding-top: 3%">I can speak three languages: English, Chinese and Korean. My personal interests are cats, Muay Thai, gym, painting, and cooking.</div>
+            <div>Welcome to my personal homepage. This is Kexin Li (Cassie). I am a PhD student in Computer Engineering at the University of Toronto, supervised by <a href="https://www.eecg.toronto.edu/~lie/" target="_blank" rel="noopener noreferrer">Prof. David Lie</a>. My research focuses on Trustworthy Machine Learning and Systems Security, with emphasis on building secure and privacy-preserving ML systems, watermarking for intellectual property protection and AI-generated content detection, and adversarial robustness. Here is my <a href="Kexin_Li_CV.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> (Last Update: Dec 14, 2025).</div>
+            <div style="padding-top: 3%"> I can speak four languages: English, Mandarin, Korean, and French. My personal interests are cats, Muay Thai 🥊, Brazilian Jiu-jitsu 🔵, pilates 🤸🏽‍♀️, gym, painting, and cooking.
+</div>
+
+    </div>
+</div>
+
+<div class="container" style="padding-top: 4%">
+    <h4>Recent News <small style="color: #999; font-size: 0.7em;"></small></h4>
+    <div class="news-container">
+        <div class="news-scroll">
+            <div class="news-item">
+                <div class="news-date">Dec 10, 2025</div>
+                <div class="news-content">Promoted to Brazilian Jiu-jitsu Blue Belt with Most Technically Improved Student Award 🥋🏆</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">November 26, 2025</div>
+                <div class="news-content">New preprint "HMARK: Radioactive Multi-Bit Semantic-Latent Watermarking for Diffusion Models" now available on <a href="https://arxiv.org/abs/2512.00094" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">November 26, 2025</div>
+                <div class="news-content">New preprint "HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal" now available on <a href="https://arxiv.org/abs/2511.21577" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">November 8, 2025</div>
+                <div class="news-content">Won gold medal in Godai Jiu-jitsu Open Gi & No-Gi Championship 🥇</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">July 2025</div>
+                <div class="news-content">Nominated as NeurIPS Conference Ethics Reviewer for Research Track and Datasets and Benchmarks Track</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">June 2025</div>
+                <div class="news-content">Awarded <a href="https://srinstitute.utoronto.ca/news/schswartz-reisman-institute-announces-2025-26-graduate-fellows" target="_blank" rel="noopener noreferrer">SRI Graduate Fellowship</a> from Schwartz Reisman Institute</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">May 25, 2025</div>
+                <div class="news-content">New preprint "LDPKiT: Superimposing Remote Queries for Privacy-Preserving Local Model Training" now available on <a href="https://arxiv.org/abs/2405.16361" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">September 2024</div>
+                <div class="news-content">Started PhD in Computer Engineering at University of Toronto</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">June 2024</div>
+                <div class="news-content">Successfully defended Master's thesis "Recovering Utility in LDP Schemes by Training with Noise^2" 🎓</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">April 2023</div>
+                <div class="news-content">Paper "Provenance of Training without Training Data" accepted to <a href="https://doi.org/10.1145/3543507.3583198" target="_blank" rel="noopener noreferrer">WWW '23</a></div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">September 2022</div>
+                <div class="news-content">Joined TossLab as a graduate student </div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">June 2022</div>
+                <div class="news-content">Graduated with High Honours from University of Toronto (Bachelor of Applied Science in Computer Engineering, Minor in Artificial Intelligence, CGPA: 3.91/4.0) 🎓</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">June 2022</div>
+                <div class="news-content">Awarded Certificate of Distinction for Capstone Project (PixelArt), University of Toronto 🏆</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">May 2020</div>
+                <div class="news-content">Joined Intel (now altera) as Software Engineer Intern </div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">December 2019</div>
+                <div class="news-content">Paper "High-Level Synthesis Techniques to Generate Deeply Pipelined Circuits for FPGAs with Registered Routing" accepted to <a href="https://ieeexplore.ieee.org/abstract/document/8977856" target="_blank" rel="noopener noreferrer">ICFPT 2019</a></div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">May 2019</div>
+                <div class="news-content">Awarded University of Toronto Excellence Summer Research Award (one of 4 recipients) 🏆</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">September 2017</div>
+                <div class="news-content">Started my Bachelor of Applied Science in Computer Engineering at University of Toronto</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">June 2017</div>
+                <div class="news-content">Graduated from Nanchang No.2 High School Sino-Canadian Program with Governor General's Award 🎓🏅</div>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="container" style="padding-top: 4%">
     <h4>Skill Overview</h4>
-    <button type="button" class="btn btn-info">C/C++</button>
-    <button type="button" class="btn btn-info">Java</button>
-    <button type="button" class="btn btn-info">Python</button>
-    <button type="button" class="btn btn-info">Verilog</button>
-    <button type="button" class="btn btn-info">FPGA</button>
-    <button type="button" class="btn btn-info">ARM Assembly</button>
-    <button type="button" class="btn btn-info">HTML</button>
-    <button type="button" class="btn btn-info">CSS</button>
-    <button type="button" class="btn btn-info">JavaScript</button>
-    <button type="button" class="btn btn-info">MATLAB</button>
-    <button type="button" class="btn btn-info">Microsoft Office</button>
-    <button type="button" class="btn btn-info">Linux, Windows and MacOS</button>
-    <button type="button" class="btn btn-info">Muay Thai</button>
-    <button type="button" class="btn btn-info">Cooking</button>
-</div>
-<div class="container" style="padding-top: 5%">
-    <HR width="60%" SIZE=7>
-</div>
-
-<!--Bottom lines-->
-<div class="container" style="padding-left: 20%" >
-    <div class="row">
-        <div class="col-sm">
-            <h5 style="color: black">Discover</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Education.html">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Publication.html">Publication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Project.html">Project</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm">
-            <h5 style="color: black">Contact Me</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item" >
-                    <a class="nav-link active" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html" target="_blank">Email</a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
+    <button type="button" class="btn btn-info text-white">C/C++</button>
+    <button type="button" class="btn btn-info text-white">Python</button>
+    <button type="button" class="btn btn-info text-white">Java</button>
+    <button type="button" class="btn btn-info text-white">Verilog</button>
+    <button type="button" class="btn btn-info text-white">ARM Assembly</button>
+    <button type="button" class="btn btn-info text-white">JavaScript</button>
+    <button type="button" class="btn btn-info text-white">SQL</button>
+    <button type="button" class="btn btn-info text-white">LLVM</button>
+    <button type="button" class="btn btn-info text-white">Linux</button>
+    <button type="button" class="btn btn-info text-white">Intel oneAPI</button>
+    <button type="button" class="btn btn-info text-white">Quartus</button>
+    <button type="button" class="btn btn-info text-white">MATLAB</button>
 </div>
 <div style="padding-top: 4%">
     <div style="text-align: center; background-color: ghostwhite;color: black">
-        <div>Last update on March 13, 2023.</div>
-        <div>Copyright © 2018 - 2023 Kexin Li. All rights reserved.</div>
+        <div class="last-update-date">Last update on December 14, 2025.</div>
+        <div>Copyright © 2018 - 2025 Kexin Li. All rights reserved.</div>
 
     </div>
 </div>
@@ -157,8 +189,9 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="utility.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha384-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM9Xz5X8J4aAVj8Bk8DuCcvQ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

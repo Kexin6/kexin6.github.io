@@ -4,9 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Project</title>
 </head>
@@ -19,20 +21,20 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="mainPage.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="mainPage.html">Home</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Education.html">Education <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Education.html">Education</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Publication.html">Publication <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Publication.html">Publication</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Experience.html">Experience <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Experience.html">Experience</a>
             </li>
 
             <li class="nav-item active">
@@ -40,15 +42,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Contact.html">Contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="Contact.html">Contact</a>
             </li>
 
     </div>
@@ -59,7 +53,7 @@
         Kexin Li (Cassie)
     </h3>
     <h5>
-        Master of Applied Science at University of Toronto
+        PhD Student in Computer Engineering at University of Toronto
     </h5>
 </div>
 
@@ -69,7 +63,72 @@
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>PixelArt (2022) <span class="badge badge-success">Finished</span></h5>
+        <h5>Accurate and Efficient CUDA Generation through Reinforcement Learning (2025) <span class="badge bg-success">Research</span></h5>
+        <h6>Tech: Python, PyTorch, Triton, CUDA, Reinforcement Learning (GRPO)</h6>
+        A reinforcement learning framework for generating functionally correct and hardware-efficient GPU kernels.
+        This project employs a compiler-inspired multi-stage architecture that decouples correctness validation from performance optimization,
+        using GRPO for policy optimization. The system rewards compilability, functional correctness, and runtime speed, enabling iterative refinement of Triton kernels
+        for efficient GPU execution. Developed for ECE 1508: Reinforcement Learning course at University of Toronto.
+        <div>
+            <a href="RL_CUDA_report.pdf" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Report</a>
+            <a href="RL_CUDA_presentation.pdf" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Presentation Slides</a>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
+    <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
+        <h5>Provenance of Training without Training Data: Privacy-Preserving DNN Model Ownership Verification (2023) <span class="badge bg-success">Research</span></h5>
+        <h6>Tech: Python, PyTorch, Deep Learning, Model Watermarking</h6>
+        A novel intellectual property protection mechanism for deep neural networks that enables model ownership verification without requiring access to training data.
+        This work addresses the challenge of protecting DNN models against model extraction and unauthorized reuse by designing robust watermarking techniques
+        that preserve privacy while ensuring reliable ownership verification. Published at WWW '23.
+        <div>
+            <a href="https://doi.org/10.1145/3543507.3583198" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Paper (WWW '23)</a>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
+    <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
+        <h5>HMARK: Radioactive Multi-Bit Semantic-Latent Watermarking for Diffusion Models (2025) <span class="badge bg-success">Research</span></h5>
+        <h6>Tech: Python, PyTorch, Diffusion Models</h6>
+        HMARK is a novel watermarking technique for diffusion models that embeds multi-bit information into generated images while maintaining image quality.
+        This work addresses intellectual property protection and detection of AI-generated content by creating robust, semantic-latent watermarks that are resistant to removal attacks.
+        <div>
+            <a href="https://arxiv.org/abs/2512.00094" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Paper</a>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
+    <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
+        <h5>HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal (2025) <span class="badge bg-success">Research</span></h5>
+        <h6>Tech: Python, PyTorch, Audio Processing</h6>
+        HarmonicAttack is an adaptive attack framework designed to evaluate the robustness of audio watermarking systems.
+        This research investigates cross-domain watermark removal techniques and helps improve the security of audio watermarking by identifying vulnerabilities in existing approaches.
+        <div>
+            <a href="https://arxiv.org/abs/2511.21577" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Paper</a>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
+    <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
+        <h5>LDPKiT: Superimposing Remote Queries for Privacy-Preserving Local Model Training (2025) <span class="badge bg-success">Research</span></h5>
+        <h6>Tech: Python, PyTorch, Differential Privacy</h6>
+        LDPKiT introduces a novel approach to privacy-preserving machine learning by superimposing remote queries during local model training.
+        This work focuses on improving model utility under local differential privacy (LDP) constraints while maintaining strong privacy guarantees,
+        addressing the fundamental trade-off between privacy and accuracy in federated learning scenarios.
+        <div>
+            <a href="https://arxiv.org/abs/2405.16361" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Paper</a>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
+    <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
+        <h5>PixelArt (2022) <span class="badge bg-primary">Project</span></h5>
         <h6>Tech: Python 3, Blender</h6>
         It is undergrad 4th-year capstone project. We developed a general algorithm for
         synthetic static graphical data generation that accepts valid 3D objects.
@@ -81,33 +140,35 @@
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>RECTNet (2020) <span class="badge badge-success">Finished</span></h5>
+        <h5>RECTNet (2020) <span class="badge bg-primary">Project</span></h5>
         <h6>Tech: Python 3</h6>
         It is an emotion detection AI model developed by Rain, Evan, Cassie and Tim (RECT). We developed multiple AI models
         for face detection and emotion detection with the technique of transfer learning.
         The Web APP is available at http://rectnet.ml/demo.
         We used Affectnet as our database to train our models.
         <div>
-            <a href="https://github.com/Kexin6/RECTnet" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+            <a href="https://github.com/Kexin6/RECTnet" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
         </div>
     </div>
 </div>
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>LegUp High-Level Synthesis (2019) <span class="badge badge-success">Finished</span></h5>
-        <h6>Tech: C++, Python 3</h6>
-        I upgraded LegUp to include Stratix10 board support and implemented register insertion techniques after the chosen instructions in the latest version of LegUp.
-        I also optimized algorithms to reduce wall-clock time by taking advantage of the register-rich routing architecture
-        of the new Intel FPGA Stratix10 board. I improved LLVM compiler by adding additional passes using C++.
-        In addition, I conducted simulations and collected benchmark results efficiently by writing Python scripts.
-
+        <h5>LegUp High-Level Synthesis (2019) <span class="badge bg-success">Research</span></h5>
+        <h6>Tech: C++, Python, LLVM, FPGA</h6>
+        Enhanced the LegUp High-Level Synthesis framework to better exploit register-rich FPGA architectures.
+        Implemented LLVM backend extensions that improved pipeline depth and performance of synthesized FPGA circuits.
+        Upgraded LegUp to include Stratix10 board support and optimized algorithms to reduce wall-clock time by taking advantage of the register-rich routing architecture.
+        Evaluated research prototypes on Intel Stratix 10 FPGAs to validate architectural and compiler-level optimizations. Published at ICFPT 2019.
+        <div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8977856" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Paper (ICFPT '19)</a>
+        </div>
     </div>
 </div>
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>Supercalifragilisticexpialidocious Mapping Service (2019)<span class="badge badge-success">Finished</span></h5>
+        <h5>Supercalifragilisticexpialidocious Mapping Service (2019)<span class="badge bg-primary">Project</span></h5>
         <h6>Tech: C++</h6>
         It is an integrated project of map design. It is a team project accomplished by a group of three.
         The project is entirely programmed in C++ from UI design to back-end programming.
@@ -147,29 +208,29 @@
             </a>
         </div>
 
-        <a href="https://github.com/Kexin6/mapping_service_front_back_end" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+        <a href="https://github.com/Kexin6/mapping_service_front_back_end" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
     </div>
 </div>
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>Game of Life (2019)<span class="badge badge-success">Finished</span></h5>
+        <h5>Game of Life (2019)<span class="badge bg-primary">Project</span></h5>
         <h6>Tech: C & FPGA</h6>
         This is a team project accomplished by the team of two. The project collaborates with the use of FPGA keys and PS2 Keyboard. The player can choose the
         game mode, observe the survival of germs, start again or end the game. This is a simple game using the knowledge of polling and interrupt, as well as
         some software programming logic. It indicates a starting point of embedded programming.
         <img src="Photos/GOL.jpg" class="img-fluid" style=" padding-left: 20%; padding-right: 20%" alt="Responsive image"/>
         <div>
-            <a href="https://github.com/Kexin6/game_of_life" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+            <a href="https://github.com/Kexin6/game_of_life" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
         </div>
     </div>
 
 
 </div>
 
-<div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
+<!-- <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>Forum (2019) <span class="badge badge-warning">Ongoing</span></h5>
+        <h5>Forum (2019) <span class="badge bg-primary">Project</span></h5>
         <h6>Tech: Python(Django), HTML, CSS, JavaScript</h6>
         This is a website/system that allows people to create account to be able to login and post questions on the discussion board.
         People are able to post questions, answer questions and vote for questions or answers freely. This project has just been initialized and
@@ -178,15 +239,15 @@
             <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <div>
-            <a href="https://github.com/Kexin6/onlineAssessWeb" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+            <a href="https://github.com/Kexin6/onlineAssessWeb" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
         </div>
 
     </div>
-</div>
+</div> -->
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-    <h5>Music Game Integrated with FPGA (2018) <span class="badge badge-success">Finished</span></h5>
+    <h5>Music Game Integrated with FPGA (2018) <span class="badge bg-primary">Project</span></h5>
         <h6>Tech: Verilog & FPGA</h6>
     The design is a combination of five parts, namely the video input, PS2 keyboard input, game logic, VGA display output, and audio output. Video input and VGA display output interact directly with the game logic, video
     input provides the real position and VGA’s finite state machine (FSM) logic provides the expected position,
@@ -218,18 +279,18 @@
         </a>
     </div>
 
-    <a href="https://github.com/Kexin6/ECE241" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+    <a href="https://github.com/Kexin6/ECE241" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
     </div>
 </div>
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>WeChat Mini Program (2018) <span class="badge badge-success">Finished</span></h5>
+        <h5>WeChat Mini Program (2018) <span class="badge bg-primary">Project</span></h5>
         <h6>Tech: Java, HTML, CSS, JavaScript</h6>
         This is a program that allows users to share videos on the social media. Users can create their own account and password.
         They can upload their profile pictures and videos. More functions are waiting to be updated.
         <div>
-            <a href="https://github.com/Kexin6/weChat-program-1.1" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+            <a href="https://github.com/Kexin6/weChat-program-1.1" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
         </div>
 
     </div>
@@ -238,14 +299,14 @@
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>Small-scaled Python project to fetch information from websites (2018)<span class="badge badge-success">Finished</span></h5>
+        <h5>Small-scaled Python project to fetch information from websites (2018)<span class="badge bg-primary">Project</span></h5>
         <h6>Tech: Python, Regular Expression</h6>
         This is a program that can fetch the name of anchors and number of audience from a website's HTML script using web scraper.
         The principle of this program is the combination of regular expression and Python, which simplifies the
         part of data analysis. After analyzing the data, it is able to get the popularity of the anchors.
 
         <div>
-            <a href="https://github.com/Kexin6/zergProject" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+            <a href="https://github.com/Kexin6/zergProject" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
         </div>
 
     </div>
@@ -253,13 +314,13 @@
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>Mann Museum design team with professor Steve Mann (2018)<span class="badge badge-success">Finished</span></h5>
+        <h5>Mann Museum design team with professor Steve Mann (2018)<span class="badge bg-primary">Project</span></h5>
         <h6>Tech: HTML</h6>
         It is a research team that does research on professor Mann's work, such as virtual reality, High Dynamic Range(HDR), etc. and proposes ideas on
         the construction of Mann's Museum in Shenzhen, China.
 
         <div>
-            <a href="https://github.com/JasonLiDuo/web" target="_blank" button type="button" class="btn btn-outline-primary">Project Link</a>
+            <a href="https://github.com/JasonLiDuo/web" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-outline-primary">Project Link</a>
         </div>
     </div>
 </div>
@@ -267,7 +328,7 @@
 
 <div style="padding-top: 1%; padding-left: 4%; padding-right: 4%">
     <div class="shadow-lg p-3 mb-5 rounded" style=" background-color: whitesmoke;" >
-        <h5>Method of delivering a learning program to Haiti (2018)<span class="badge badge-success">Finished</span></h5>
+        <h5>Method of delivering a learning program to Haiti (2018)<span class="badge bg-primary">Project</span></h5>
         As a team, we initiated a pilot program to deliver Khan Academy to Haiti for Haitian NGO Centre d’Inspiration Jeunesse.
         Since I was the project manager, it was my responsibility to communicate amongst team members and the client. In the end, we
         proposed a new energy system that works in conditions without electricity or light.
@@ -284,55 +345,19 @@
 </div>
 
 
-<!--Bottom lines-->
-<div class="container" style="padding-left: 20%" >
-    <div class="row">
-        <div class="col-sm">
-            <h5 style="color: black">Discover</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Education.html">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Publication.html">Publication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Project.html">Project</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm">
-            <h5 style="color: black">Contact Me</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item" >
-                    <a class="nav-link active" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html" target="_blank">Email</a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</div>
 <div style="padding-top: 4%">
     <div style="text-align: center; background-color: ghostwhite;color: black">
-        <div>Last update on March 13, 2023.</div>
-        <div>Copyright © 2018 - 2023 Kexin Li. All rights reserved.</div>
+        <div class="last-update-date">Last update on December 14, 2025.</div>
+        <div>Copyright © 2018 - 2025 Kexin Li. All rights reserved.</div>
 
     </div>
 </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="utility.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha384-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM9Xz5X8J4aAVj8Bk8DuCcvQ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

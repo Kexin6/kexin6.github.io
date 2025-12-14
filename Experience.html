@@ -4,9 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Experience</title>
 </head>
@@ -20,36 +22,28 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="mainPage.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="mainPage.html">Home</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Education.html">Education <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Education.html">Education</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Publication.html">Publication <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Publication.html">Publication</a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="Experience.html">Experience <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Project.html">Project <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Project.html">Project</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Contact.html">Contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="Contact.html">Contact</a>
             </li>
 
     </div>
@@ -60,7 +54,7 @@
         Kexin Li (Cassie)
     </h3>
     <h5>
-        Master of Applied Science at University of Toronto
+        PhD Student in Computer Engineering at University of Toronto
     </h5>
 </div>
 
@@ -71,34 +65,13 @@
 <!--Employment-->
 
 <div class="container" style="padding-top: 2%; padding-left: 2%; padding-right: 2%">
-    <h3 style="color: #d7b2ff;">Employment</h3>
+    <h3 style="color: #004085;">Industry & Research Experience</h3>
 
     <div class="shadow p-3 mb-5 bg-white rounded">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h5>Tsinghua University <span class="badge badge-success">Research Intern</span> </h5>
-                </div>
-                <div class="col-sm">
-                </div>
-                <div class="col-sm">
-                    May 2021 - May 2022
-                </div>
-            </div>
-            I joined Professor Qi Li’s group at Tsinghua University in May 2021.
-            Since then, I have been working on secure machine learning: highly-functional DNN model IP protection.
-            We are currently writing a paper that will be submitted to the 31st USENIX Security Symposium conference (USENIX Security '22) this October.
-
-        </div>
-
-
-    </div>
-
-    <div class="shadow p-3 mb-5 bg-white rounded">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>INTEL Corporation<span class="badge badge-success">Software Engineering Intern</span> </h5>
+                    <h5>Intel Corporation (now Altera) <span class="badge bg-primary">Software Engineer</span> </h5>
                 </div>
                 <div class="col-sm">
                 </div>
@@ -106,22 +79,43 @@
                     May 2020 - May 2021
                 </div>
             </div>
-            I was involved in developing High-Level Synthesis tool chain for Intel FPGA, including OneAPI, High-Level Synthesis (HLS) compiler, and OpenCL.
-            This experience requires the knowledge of C++, compiler basics (frontend to backend), algorithms, debugging and communication skills.
-            Having worked actively with customers and engineers at global sites, I developed strong communication skills and self-efficacy.
-            Due to my proficiency in team working, I was able to build a trusting relationship with my co-workers and took responsibility of critical tasks
-            such as weekly performance monitoring and design updates.
+            <ul>
+                <li>Contributed to production LLVM-based High-Level Synthesis (HLS) toolchains for Intel FPGAs (oneAPI, OpenCL, HLS compiler), used by internal and external developers</li>
+                <li>Designed and implemented compiler features and analysis passes supporting large-scale FPGA compilation workflows</li>
+                <li>Conducted Quality-of-Results (QoR) regression analyses for weekly toolchain evaluations, enabling earlier identification and diagnosis of performance regressions across compiler versions and FPGA architectures</li>
+                <li>Collaborated with geographically distributed engineering teams to evaluate architectural changes and communicate performance and reliability trade-offs influencing toolchain development decisions to internal stakeholders and external customers</li>
+            </ul>
 
         </div>
-
-
     </div>
 
     <div class="shadow p-3 mb-5 bg-white rounded">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h5>University of Toronto<span class="badge badge-success">Summer Research Intern</span> </h5>
+                    <h5>Tsinghua University <span class="badge bg-success">Research Intern</span> </h5>
+                </div>
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                    May 2021 - April 2022
+                </div>
+            </div>
+            <div>Institute for Network Sciences and Cyberspace | Supervisor: Prof. Qi Li</div>
+            <ul>
+                <li>Designed a novel intellectual property protection mechanism for deep neural networks (DNNs), targeting robustness against model extraction and unauthorized reuse</li>
+                <li>Characterized attacker behaviors and identified security limitations in existing DNN protection techniques through empirical analysis</li>
+                <li>Conducted systematic, large-scale empirical evaluations across diverse adversarial threat models to assess defense effectiveness</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h5>University of Toronto <span class="badge bg-success">Summer Research Intern</span> </h5>
                 </div>
                 <div class="col-sm">
                 </div>
@@ -129,271 +123,54 @@
                     May 2019 - August 2019
                 </div>
             </div>
-            I was the summer research intern in the Programmable Digital Systems Group at the University of Toronto. I worked on the research, design, implementation and test of the proposed research.
-            This involves knowledge of software engineering, algorithms, data structures and computer hardware.
-            I met weekly with the supervisor (Professor Jason Anderson) one-on-one, as well as joining the weekly meetings with his graduate students.
-            I co-authored and published my research work in 2019. (Details see the Publication page)
+            <div>Programmable Digital Systems Group | Supervisor: Prof. Jason H. Anderson</div>
+            <ul>
+                <li>Enhanced the LegUp High-Level Synthesis framework to better exploit register-rich FPGA architectures</li>
+                <li>Implemented LLVM backend extensions that improved pipeline depth and performance of synthesized FPGA circuits</li>
+                <li>Evaluated research prototypes on Intel Stratix 10 FPGAs to validate architectural and compiler-level optimizations</li>
+            </ul>
 
         </div>
-
-
     </div>
+
+    <h3 style="color: #9b59d6; padding-top: 2%;">Teaching Experience</h3>
 
     <div class="shadow p-3 mb-5 bg-white rounded">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h5>Tomorrow HighTech Co.,LTD   <span class="badge badge-success">Intern</span> </h5>
+                    <h5>University of Toronto <span class="badge bg-info text-white">Teaching Assistant</span> </h5>
                 </div>
                 <div class="col-sm">
                 </div>
                 <div class="col-sm">
-                    May 2018 – June 2018
+                    2022 - Present
                 </div>
             </div>
-
-            My job was mainly testing and improving the program. I helped debug and run the program to see whether there were any potential improvements to make or errors to fix.
-            During this working period, I participated in all the discussions and mostly all the meetings in our department to follow up with the process of a project.
-            This experience helped me to have a basic understanding of the idea of MVC. I also got to know the general steps of implementation,
-            since I was in charge of debugging and testing. Apart from these, my supervisor taught me the basic structure of the software system.
-            Due to this job, I learnt how to program using Java. Under the help of my supervisor, I also practiced coding using HTML, CSS and JavaScript to design a web page.
-        </div>
-
-
-    </div>
-
-    <div class="shadow p-3 mb-5 bg-white rounded">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Nanchang Channel Education Consultant Co.,Ltd  <span class="badge badge-primary">Part-time</span> </h5>
-                </div>
-                <div class="col-sm">
-                </div>
-                <div class="col-sm">
-                    May 2016 – August 2016; June 2017 – August 2017; June 2018 – August 2018
-                </div>
-            </div>
-            I taught IELTS reading, listening, speaking and writing to help students reach the
-            universities' minimum language requirement. Most of my students got 6.5/9.0 in the end.
-            Some outstanding students improved from 5.5 to 7.0 or 7.5 in the end.
-        </div>
-    </div>
-
-    <div class="shadow p-3 mb-5 bg-white rounded">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Nanchang Channel Education Consultant Co.,Ltd  <span class="badge badge-primary">Part-time</span> </h5>
-                </div>
-                <div class="col-sm">
-                </div>
-                <div class="col-sm">
-                    June 2018 – August 2018
-                </div>
-            </div>
-            I taught AP Calculus BC. The course covered functions, limits, differentiation, integration, etc.
-            I created a curriculum based on AP Barron and Calculus for Scientists and Engineers to help student understand better.
-        </div>
-    </div>
-
-</div>
-
-<!--CCR-->
-<div class="container" style="padding-top: 2%; padding-left: 2%; padding-right: 2%; " >
-
-    <h3 style="color: #b96fff">Co-Curricular Experience</h3>
-    <div class="shadow p-3 mb-5  rounded" style="background-color: whitesmoke" >
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Vice President   </h5>
-                </div>
-                <div class="col-sm">
-                    Association of Chinese Engineers
-                </div>
-                <div class="col-sm">
-                    2018.3 –2019.3
-                </div>
-            </div>
-            <div>
-                • Manage the WeChat official account and publish articles periodically
-            </div>
-            <div>
-                • Write articles to advertise the corresponding events
-            </div>
-            <div>
-                • Attribute work to team members.
-            </div>
-            <div>
-                • Publicize the association through social media (Top hit reached 2000 times)
-            </div>
-
-
-
-        </div>
-
-
-    </div>
-
-    <div class="shadow p-3 mb-5  rounded" style="background-color: whitesmoke">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Marketing Director</h5>
-                </div>
-                <div class="col-sm">
-                    Association of Chinese Engineers
-                </div>
-                <div class="col-sm">
-                    2017.9-2018.3
-                </div>
-            </div>
-            Association of Chinese Engineers (UTACE) is a student-run, not-for-profit student club that organizes social,
-            academic and career events for all University of Toronto students, with an emphasis on Engineering students.
-
-            The marketing director worked with event planning teams to organize and execute marketing strategies for ACE's events.
-            In addition, the Marketing Director drafted and published articles on WeChat and Facebook,
-            as well as designed posters to provide useful information to UofT students and improve the branding of the club.
-        </div>
-    </div>
-
-    <div class="shadow p-3 mb-5 rounded" style="background-color: whitesmoke">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Participant</h5>
-                </div>
-                <div class="col-sm">
-                    ILead Leadership Labs
-                </div>
-                <div class="col-sm">
-                    2017-2018
-                </div>
-            </div>
-            ILead Leadership Labs are 90-minute drop-in workshops
-            for engineering students designed to support the development of tangible leadership skills, such as project management, public speaking,
-            conflict resolution, meeting facilitation, team development, and feedback tools.
-            Participants engaged with facilitators and fellow engineering students to develop leadership and professional skills through guided activities,
-            peer and self reflection, and hands-on exercises.
-        </div>
-    </div>
-
-
-</div>
-
-
-<!--voluntary-->
-<div class="container" style="padding-top: 2%; padding-left: 2%; padding-right: 2%">
-    <h3 style="color: #9941ff;">Volunteer Experience</h3>
-
-    <div class="shadow p-3 mb-5 rounded" style="background-color: lightgrey">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Volunteer Note-Taker </h5>
-                </div>
-                <div class="col-sm">
-                    Volunteer Note-Taking Program
-                </div>
-                <div class="col-sm">
-                    2017-2018
-                </div>
-            </div>
-            The Volunteer Note-Taking program is a very important academic accommodation
-            provided to students who are register with the Accessibility Services.
-            With Volunteers providing and uploading their notes consistently,
-            it assists students with disabilities to achieve their academic goals.
-        </div>
-    </div>
-
-
-    <div class="shadow p-3 mb-5 rounded" style="background-color: lightgrey">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Math Tutor</h5>
-                </div>
-                <div class="col-sm">
-                    Nanchang No.2 High School
-                </div>
-                <div class="col-sm">
-                    2015-2016
-                </div>
-            </div>
-            Helped schoolmates with their pre-Calculus and Calculus curriculum.
-        </div>
-    </div>
-
-    <div class="shadow p-3 mb-5 rounded" style="background-color: lightgrey">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h5>Tutor</h5>
-                </div>
-                <div class="col-sm">
-                    Qingyulan Institution
-                </div>
-                <div class="col-sm">
-                    2014-2017
-                </div>
-            </div>
-            Taught students with high school curriculum
-        </div>
-    </div>
-
-</div>
-
-
-<!--Bottom lines-->
-<div class="container" style="padding-left: 20%" >
-    <div class="row">
-        <div class="col-sm">
-            <h5 style="color: black">Discover</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Education.html">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Publication.html">Publication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Project.html">Project</a>
-                </li>
+            <ul>
+                <li>ECE1508H1 Applied Deep Learning (2025 – Present)</li>
+                <li>ECE568H1 Computer Security (2023 – Present)</li>
+                <li>ECE244H1 Programming Fundamentals (2022 – Present)</li>
             </ul>
         </div>
-        <div class="col-sm">
-            <h5 style="color: black">Contact Me</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item" >
-                    <a class="nav-link active" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html" target="_blank">Email</a>
-                </li>
-            </ul>
-        </div>
-
     </div>
+
 </div>
+
+
 <div style="padding-top: 4%">
     <div style="text-align: center; background-color: ghostwhite;color: black">
-        <div>Last update on March 13, 2023.</div>
-        <div>Copyright © 2018 - 2023 Kexin Li. All rights reserved.</div>
+        <div class="last-update-date">Last update on December 14, 2025.</div>
+        <div>Copyright © 2018 - 2025 Kexin Li. All rights reserved.</div>
 
     </div>
 </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="utility.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha384-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM9Xz5X8J4aAVj8Bk8DuCcvQ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

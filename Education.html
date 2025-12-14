@@ -4,9 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Education</title>
 </head>
@@ -20,36 +22,28 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="mainPage.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="mainPage.html">Home</a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="Education.html">Education <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Publication.html">Publication <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Experience.html">Experience <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="Project.html">Project <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Publication.html">Publication</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
+                <a class="nav-link" href="Experience.html">Experience</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
+                <a class="nav-link" href="Project.html">Project</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="Contact.html">Contact <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
             </li>
 
     </div>
@@ -60,7 +54,7 @@
         Kexin Li (Cassie)
     </h3>
     <h5>
-        Master of Applied Science at University of Toronto
+        PhD Student in Computer Engineering at University of Toronto
     </h5>
 
 </div>
@@ -69,74 +63,46 @@
     <h2>Education</h2>
     <div class="shadow p-3 mb-5 rounded" style="background-color: aliceblue">
         <h4>University of Toronto</h4>
-        <h5>Master of Applied Science</h5>
-        <h6>Supervisor: David Lie</h6>
-        <h6>Research Interests: Computer security, systems, AI and privacy</h6>
+        <h5>Doctor of Philosophy in Computer Engineering (September 2024 – Present)</h5>
+        <h6>Supervisor: <a href="https://www.eecg.toronto.edu/~lie/" target="_blank" rel="noopener noreferrer">Prof. David Lie</a></h6>
+        <h6>Research Area: Trustworthy Machine Learning and Systems Security, with a focus on building secure and privacy-preserving Machine Learning systems, watermarking for intellectual property protection and detection of AI-generated content, and adversarial robustness</h6>
+        <h6>Grade: A+</h6>
 
-        <a class="nav-link" href="https://security.csl.toronto.edu/" target="_blank">Link</a>
+        <a class="nav-link" href="https://security.csl.toronto.edu/" target="_blank" rel="noopener noreferrer">Link</a>
     </div>
-    
+
     <div class="shadow p-3 mb-5 rounded" style="background-color: aliceblue">
         <h4>University of Toronto</h4>
-        <h5>Bachelor of Applied Science (Graduated with High Honours)</h5>
-        <h6>Specialist in Computer Engineering</h6>
-        <h6>Minor in Artificial Intelligence</h6>
-        <h6>Certificate in Engineering Business</h6>
+        <h5>Master of Applied Science in Computer Engineering (September 2022 – August 2024)</h5>
+        <h6>Supervisor: <a href="https://www.eecg.toronto.edu/~lie/" target="_blank" rel="noopener noreferrer">Prof. David Lie</a></h6>
+        <h6>Thesis: Recovering Utility in LDP Schemes by Training with Noise^2 - Investigated methods to improve model utility under local differential privacy constraints while preserving strong privacy guarantees</h6>
+        <h6>Grade: A+</h6>
 
-        <a class="nav-link" href="https://www.utoronto.ca" target="_blank">Link</a>
+        <a class="nav-link" href="https://security.csl.toronto.edu/" target="_blank" rel="noopener noreferrer">Link</a>
+    </div>
+
+    <div class="shadow p-3 mb-5 rounded" style="background-color: aliceblue">
+        <h4>University of Toronto</h4>
+        <h5>Bachelor of Applied Science with High Honours (September 2017 – June 2022)</h5>
+        <h6>Computer Engineering Specialist; Minor in Artificial Intelligence</h6>
+        <h6>CGPA: 3.91 / 4.0</h6>
+
+        <a class="nav-link" href="https://www.utoronto.ca" target="_blank" rel="noopener noreferrer">Link</a>
     </div>
 
     <div class="shadow p-3 mb-5 rounded" style="background-color: aliceblue">
         <h4>Nanchang No.2 High School Sino-Canadian Program</h4>
         <h5>Graduated with Governor General Award</h5>
-        <a class="nav-link" href="http://www.ncezzjb.com" target="_blank">Link</a>
+        <a class="nav-link" href="http://www.ncezzjb.com" target="_blank" rel="noopener noreferrer">Link</a>
     </div>
 
 </div>
 
 
-<!--Bottom lines-->
-<div class="container" style="padding-left: 20%" >
-    <div class="row">
-        <div class="col-sm">
-            <h5 style="color: black">Discover</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Education.html">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Publication.html">Publication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Project.html">Project</a>
-                </li>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm">
-            <h5 style="color: black">Contact Me</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item" >
-                    <a class="nav-link active" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Kexin6" target="_blank">GitHub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Email</a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</div>
 <div style="padding-top: 4%">
     <div style="text-align: center; background-color: ghostwhite;color: black">
-        <div>Last update on March 13, 2023.</div>
-        <div>Copyright © 2018 - 2023 Kexin Li. All rights reserved.</div>
+        <div class="last-update-date">Last update on December 14, 2025.</div>
+        <div>Copyright © 2018 - 2025 Kexin Li. All rights reserved.</div>
 
     </div>
 </div>
@@ -145,8 +111,9 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="utility.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha384-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM9Xz5X8J4aAVj8Bk8DuCcvQ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
