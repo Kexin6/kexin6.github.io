@@ -1,5 +1,15 @@
 /* Custom styles for Kexin Li's personal website */
 
+/* Navbar Styles */
+.navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar-brand {
+    margin-left: 0.5rem;
+}
+
 /* News Section Styles */
 .news-container {
     background: linear-gradient(to bottom, #f8f9fa, #ffffff);
