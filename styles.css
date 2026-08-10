@@ -58,7 +58,8 @@ h1, h2, h3, h4 { color: var(--text); line-height: 1.25; }
 .skip-link:focus { top: 1rem; }
 .page-shell { margin: 0 auto; max-width: var(--max-width); padding-inline: 24px; }
 .section { padding: 72px 0; scroll-margin-top: 68px; }
-.section-tinted, .section-dark, .contact-section { background: var(--background-alt); }
+.section-tinted, .contact-section { background: var(--background-alt); }
+.section-dark { background: var(--background); }
 
 .site-header {
     background: #fff;
@@ -179,6 +180,7 @@ h1, h2, h3, h4 { color: var(--text); line-height: 1.25; }
 .button-primary { background: var(--blue-dark); color: #fff; }
 .button-primary:hover { background: var(--blue); color: #fff; }
 .button-secondary { background: #fff; color: var(--blue-dark); }
+.cv-date { font-size: 0.72rem; font-weight: 400; }
 .pronunciation { color: var(--muted); font-size: 0.86rem; }
 
 .profile-card { text-align: center; }
@@ -301,6 +303,28 @@ h1, h2, h3, h4 { color: var(--text); line-height: 1.25; }
 .timeline-content p { color: var(--muted); margin-bottom: 0.5rem; }
 .timeline-content .institution { color: var(--text); font-weight: 700; }
 
+.awards-list {
+    background: #fff;
+    border-top: 1px solid var(--border);
+    list-style: none;
+    margin: 0;
+    max-width: 900px;
+    padding: 0;
+}
+
+.awards-list li {
+    align-items: baseline;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 17px 18px;
+}
+
+.awards-list span { font-weight: 600; }
+.awards-list time { color: var(--muted); flex: 0 0 auto; font-size: 0.82rem; }
+.awards-list small { color: var(--muted); display: block; font-size: 0.78rem; font-weight: 400; margin-top: 0.15rem; }
+
 .subsection-title { font-size: 1.35rem; margin-bottom: 1rem; }
 .experience-block + .experience-block { margin-top: 42px; }
 .experience-grid { display: grid; gap: 14px; }
@@ -327,7 +351,7 @@ h1, h2, h3, h4 { color: var(--text); line-height: 1.25; }
 
 .card-topline time, .muted { color: var(--muted); font-weight: 400; }
 .muted { font-size: 0.85rem; }
-.two-column-experience { display: grid; gap: 20px; grid-template-columns: 0.8fr 1.2fr; margin-top: 42px; }
+.two-column-experience { display: grid; gap: 20px; grid-template-columns: 1.2fr 0.8fr; margin-top: 42px; }
 .two-column-experience .experience-block { margin-top: 0; }
 .service-card dl, .service-card dd { margin: 0; }
 .service-card dl > div + div { border-top: 1px solid var(--border); margin-top: 0.85rem; padding-top: 0.85rem; }
@@ -436,6 +460,7 @@ a.contact-card:hover { border-color: #aeb7c1; color: var(--text); }
     .news-item { gap: 0.15rem; grid-template-columns: 1fr; }
     .publication-card { gap: 0.4rem; grid-template-columns: 1fr; padding: 18px 12px; }
     .timeline-item { gap: 0.25rem; grid-template-columns: 1fr; }
+    .awards-list li { align-items: start; flex-direction: column; gap: 0.2rem; padding-inline: 12px; }
     .card-topline { align-items: start; flex-direction: column; gap: 0.1rem; }
     .project-grid { grid-template-columns: 1fr; }
     .wide-project { grid-column: auto; }
