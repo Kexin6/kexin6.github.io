@@ -1,197 +1,487 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
-
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kexin (Cassie) Li is a PhD student at the University of Toronto researching trustworthy machine learning, systems security, privacy, and AI provenance.">
+    <meta name="theme-color" content="#11273f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <link rel="icon" href="Photos/profile.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="canonical" href="https://www.cassiekexinli.com/">
     <title>Kexin Li</title>
 </head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
-<!--Navigation bar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Kexin Li</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Kexin Li, back to home">
+            <span class="brand-mark" aria-hidden="true">KL</span>
+            <span>Kexin Li (Cassie)</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span><span></span>
+        </button>
+        <div class="site-nav" id="site-nav">
+            <a class="nav-link active" href="#home" aria-current="page">Home</a>
+            <a class="nav-link" href="#publication">Publication</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#project">Project</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="Education.html">Education</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="Publication.html">Publication</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="Experience.html">Experience</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="Project.html">Project</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="Contact.html">Contact</a>
-            </li>
-
-    </div>
-</nav>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <div style="padding-top:5%; padding-left: 2%">
-                <h3 style="color: #ff5722">
-                    Kexin Li (Cassie) 李可欣
-                </h3>
-                <h6>
-                    How to pronounce my first name: <a href="https://www.howtopronounce.com/kexin" target="_blank" rel="noopener noreferrer">kě xīn </a>
-                </h6>
-                <h5>
-                    PhD Student in Computer Engineering at University of Toronto
-                </h5>
-                <!--<h5>-->
-                    <!--Research Intern at Tsinghua University-->
-                <!--</h5>-->
-                <!--<h6>Former Software Engineering Intern at INTEL Corporation</h6>-->
-                <!--<h6>Former Summer Research Intern at University of Toronto</h6>-->
-                <!--<h6>2018-2019 Vice President in Association for Chinese Engineers(UTACE)</h6>-->
+<main id="main-content">
+    <section class="hero section" id="home" aria-labelledby="home-title">
+        <div class="page-shell hero-grid">
+            <div class="hero-copy">
+                <h1 id="home-title">Kexin Li <span>(Cassie)</span></h1>
+                <p class="name-chinese">李可欣</p>
+                <p class="role">PhD Student in Computer Engineering at the University of Toronto</p>
+                <p class="hero-intro">I work in safe and trustworthy AI provenance. See publications <a href="#publication">here</a>.</p>
+                <p class="supervision">I am advised by <a href="https://www.eecg.toronto.edu/~lie/" target="_blank" rel="noopener noreferrer">Prof. David Lie</a> in the <a href="https://security.csl.toronto.edu/" target="_blank" rel="noopener noreferrer">Toronto Systems Security Lab</a>.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="Kexin_Li_CV.pdf" target="_blank" rel="noopener noreferrer">View CV <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="#contact">Get in touch</a>
+                </div>
+                <p class="pronunciation">How to pronounce my first name: <a href="https://www.howtopronounce.com/kexin" target="_blank" rel="noopener noreferrer">kě xīn</a>.</p>
             </div>
-            <div style="padding-left: 5%; padding-top: 2%">
-                <img src="Photos/profile.png" class="rounded-circle img-fluid" style=" box-shadow: 5px 5px 5px 5px gainsboro; width: 250px" alt="Responsive image"/>
+            <aside class="profile-card" aria-label="Profile">
+                <div class="profile-frame">
+                    <img src="Photos/profile.png" alt="Portrait of Kexin Li" width="480" height="480">
+                </div>
+                <div class="profile-details">
+                    <p><span class="status-dot" aria-hidden="true"></span> Based in Toronto, Canada</p>
+                    <p>English · Mandarin · Korean · French</p>
+                </div>
+            </aside>
+        </div>
+
+        <div class="page-shell home-grid">
+            <div class="news-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Recent news</h2>
+                    </div>
+                    <span class="scroll-hint">Scroll for more</span>
+                </div>
+                <div class="news-list" tabindex="0" aria-label="Recent news, scrollable">
+                    <article class="news-item featured-news">
+                        <time datetime="2026-08-24">August 24–27, 2026</time>
+                        <p>I will present <a href="https://arxiv.org/abs/2405.16361" target="_blank" rel="noopener noreferrer">LDPKiT</a> at the 6th IWAPS, co-located with ARES 2026, in Linköping, Sweden.</p>
+                    </article>
+                    <article class="news-item featured-news">
+                        <time datetime="2026-07">July 2026</time>
+                        <p><a href="https://conf.researchr.org/details/ase-2026/ase-2026-research-track/157/RFC2TLA-Extracting-and-Verifying-Formal-Models-from-RFC-Documents-using-Continuous-" target="_blank" rel="noopener noreferrer">RFC2TLA+</a> was accepted to the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026) and will appear in Munich, Germany.</p>
+                    </article>
+                    <article class="news-item featured-news">
+                        <time datetime="2026-07-06">July 6, 2026</time>
+                        <p>I attended ICML 2026 in Seoul and served on the program committee of the <a href="https://trustworthy-ai-for-good.github.io/" target="_blank" rel="noopener noreferrer">Trustworthy AI for Good workshop</a>.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2026-06-19">June 19, 2026</time>
+                        <p>New preprint, <a href="https://arxiv.org/abs/2606.21365" target="_blank" rel="noopener noreferrer">“LambdaMark: Semantic Audio Watermarking for Robustness and Radioactivity,”</a> is now available on arXiv.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2025-12-10">December 10, 2025</time>
+                        <p>Promoted to Brazilian Jiu-jitsu blue belt and received the Most Technically Improved Student Award.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2025-11-26">November 26, 2025</time>
+                        <p>New preprint, <a href="https://arxiv.org/abs/2512.00094" target="_blank" rel="noopener noreferrer">“HMARK: Radioactive Multi-Bit Semantic-Latent Watermarking for Diffusion Models,”</a> is now available on arXiv.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2025-11-26">November 26, 2025</time>
+                        <p>New preprint, <a href="https://arxiv.org/abs/2511.21577" target="_blank" rel="noopener noreferrer">“HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal,”</a> is now available on arXiv.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2025-11-08">November 8, 2025</time>
+                        <p>Won gold at the Godai Jiu-jitsu Open Gi &amp; No-Gi Championship.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2025-07">July 2025</time>
+                        <p>Selected as an ethics reviewer for the NeurIPS Research and Datasets &amp; Benchmarks tracks.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2025-06">June 2025</time>
+                        <p>Awarded a <a href="https://srinstitute.utoronto.ca/news/schswartz-reisman-institute-announces-2025-26-graduate-fellows" target="_blank" rel="noopener noreferrer">Schwartz Reisman Institute Graduate Fellowship</a>.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2024-09">September 2024</time>
+                        <p>Started my PhD in Computer Engineering at the University of Toronto.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2024-06">June 2024</time>
+                        <p>Successfully defended my master’s thesis, “Recovering Utility in LDP Schemes by Training with Noise².”</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2023-04">April 2023</time>
+                        <p>“Provenance of Training without Training Data” was accepted to <a href="https://doi.org/10.1145/3543507.3583198" target="_blank" rel="noopener noreferrer">The Web Conference 2023</a>.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2022-09">September 2022</time>
+                        <p>Joined the Toronto Systems Security Lab as a graduate student.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2022-06">June 2022</time>
+                        <p>Graduated with High Honours from the University of Toronto and received a Certificate of Distinction for the PixelArt capstone project.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2020-05">May 2020</time>
+                        <p>Joined Intel, now Altera, as a software engineering intern.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2019-12">December 2019</time>
+                        <p>Our work on high-level synthesis for registered-routing FPGAs was published at <a href="https://ieeexplore.ieee.org/abstract/document/8977856" target="_blank" rel="noopener noreferrer">ICFPT 2019</a>.</p>
+                    </article>
+                    <article class="news-item">
+                        <time datetime="2019-05">May 2019</time>
+                        <p>Received the University of Toronto Excellence Summer Research Award.</p>
+                    </article>
+                </div>
+            </div>
+            <aside class="skills-panel">
+                <h2>Technical skills</h2>
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="tag-list"><span>Python</span><span>C/C++</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>Verilog</span></div>
+                </div>
+                <div class="skill-group">
+                    <h3>ML &amp; systems</h3>
+                    <div class="tag-list"><span>PyTorch</span><span>CUDA</span><span>Triton</span><span>LLVM</span><span>Linux</span><span>FPGA</span></div>
+                </div>
+                <div class="skill-group">
+                    <h3>Interests outside research</h3>
+                    <p>Cats, Muay Thai 🥊, Brazilian Jiu-jitsu 🔵, Pilates 🤸🏽‍♀️, gym, painting, and cooking.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="section section-tinted" id="publication" aria-labelledby="publication-title">
+        <div class="page-shell">
+            <div class="section-heading">
+                <div>
+                    <h2 id="publication-title">Publication</h2>
+                </div>
+            </div>
+            <div class="publication-list">
+                <article class="publication-card publication-featured">
+                    <div class="publication-year">2026</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-conference">ASE 2026</span><span>Research Track</span></div>
+                        <h3>RFC2TLA+: Extracting and Verifying Formal Models from RFC Documents using Continuous LLM Feedback</h3>
+                        <p class="authors">Guozhen Ding, <strong>Kexin Li</strong>, Ilya Grishchenko, and David Lie</p>
+                        <p>41st IEEE/ACM International Conference on Automated Software Engineering, Munich, Germany.</p>
+                        <a class="text-link" href="https://conf.researchr.org/details/ase-2026/ase-2026-research-track/157/RFC2TLA-Extracting-and-Verifying-Formal-Models-from-RFC-Documents-using-Continuous-" target="_blank" rel="noopener noreferrer">Conference page <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="publication-card publication-featured">
+                    <div class="publication-year">2026</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-conference">IWAPS @ ARES 2026</span><span>Conference Workshop</span></div>
+                        <h3>LDPKiT: Superimposing Remote Queries for Privacy-Preserving Distillation</h3>
+                        <p class="authors"><strong>Kexin Li</strong>, Aastha Mehta, and David Lie</p>
+                        <p>6th International Workshop on Advances on Security and Privacy Technologies and Solutions, Linköping, Sweden.</p>
+                        <a class="text-link" href="https://arxiv.org/abs/2405.16361" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="publication-card">
+                    <div class="publication-year">2026</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-preprint">Preprint</span><span>arXiv:2606.21365</span></div>
+                        <h3>LambdaMark: Semantic Audio Watermarking for Robustness and Radioactivity</h3>
+                        <p class="authors"><strong>Kexin Li</strong>, Xiao Hu, Ilya Grishchenko, and David Lie</p>
+                        <a class="text-link" href="https://arxiv.org/abs/2606.21365" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="publication-card">
+                    <div class="publication-year">2025</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-preprint">Preprint</span><span>arXiv:2512.00094</span></div>
+                        <h3>HMARK: Radioactive Multi-Bit Semantic-Latent Watermarking for Diffusion Models</h3>
+                        <p class="authors"><strong>Kexin Li</strong>, Guozhen Ding, Ilya Grishchenko, and David Lie</p>
+                        <a class="text-link" href="https://arxiv.org/abs/2512.00094" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="publication-card">
+                    <div class="publication-year">2025</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-preprint">Preprint</span><span>arXiv:2511.21577</span></div>
+                        <h3>HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal</h3>
+                        <p class="authors"><strong>Kexin Li*</strong>, Xiao Hu*, Ilya Grishchenko, and David Lie <span class="author-note">* Equal contribution</span></p>
+                        <a class="text-link" href="https://arxiv.org/abs/2511.21577" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="publication-card">
+                    <div class="publication-year">2023</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-conference">WWW ’23</span><span>Conference</span></div>
+                        <h3>Provenance of Training without Training Data: Towards Privacy-Preserving DNN Model Ownership Verification</h3>
+                        <p class="authors">Yunpeng Liu, <strong>Kexin Li</strong>, Zhuotao Liu, Bihan Wen, Ke Xu, Weiqiang Wang, Wenbiao Zhao, and Qi Li</p>
+                        <a class="text-link" href="https://doi.org/10.1145/3543507.3583198" target="_blank" rel="noopener noreferrer">DOI <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="publication-card">
+                    <div class="publication-year">2019</div>
+                    <div>
+                        <div class="publication-meta"><span class="badge badge-conference">ICFPT 2019</span><span>Conference</span></div>
+                        <h3>High-Level Synthesis Techniques to Generate Deeply Pipelined Circuits for FPGAs with Registered Routing</h3>
+                        <p class="authors">Yu Ting Chen, Jin Hee Kim, <strong>Kexin Li</strong>, Graham Hoyes, and Jason H. Anderson</p>
+                        <a class="text-link" href="https://ieeexplore.ieee.org/abstract/document/8977856" target="_blank" rel="noopener noreferrer">IEEE Xplore <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
             </div>
         </div>
-        <div class="col-sm" style="padding-top: 4%">
-            <h3>Hi!</h3>
-            <div>Welcome to my personal homepage. This is Kexin Li (Cassie). I am a PhD student in Computer Engineering at the University of Toronto, supervised by <a href="https://www.eecg.toronto.edu/~lie/" target="_blank" rel="noopener noreferrer">Prof. David Lie</a>. My research focuses on Trustworthy Machine Learning and Systems Security, with emphasis on building secure and privacy-preserving ML systems, watermarking for intellectual property protection and AI-generated content detection, and adversarial robustness. Here is my <a href="Kexin_Li_CV.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> (Last Update: Dec 15, 2025).</div>
-            <div style="padding-top: 3%"> I can speak four languages: English, Mandarin, Korean, and French. My personal interests are cats, Muay Thai 🥊, Brazilian Jiu-jitsu 🔵, pilates 🤸🏽‍♀️, gym, painting, and cooking.
-</div>
+    </section>
 
-    </div>
-</div>
-
-<div class="container" style="padding-top: 4%">
-    <h4>Recent News <small style="color: #999; font-size: 0.7em;"></small></h4>
-    <div class="news-container">
-        <div class="news-scroll">
-            <div class="news-item">
-                <div class="news-date">Dec 10, 2025</div>
-                <div class="news-content">Promoted to Brazilian Jiu-jitsu Blue Belt with Most Technically Improved Student Award 🥋🏆</div>
+    <section class="section" id="education" aria-labelledby="education-title">
+        <div class="page-shell">
+            <div class="section-heading">
+                <div>
+                    <h2 id="education-title">Education</h2>
+                </div>
             </div>
-            <div class="news-item">
-                <div class="news-date">November 26, 2025</div>
-                <div class="news-content">New preprint "HMARK: Radioactive Multi-Bit Semantic-Latent Watermarking for Diffusion Models" now available on <a href="https://arxiv.org/abs/2512.00094" target="_blank" rel="noopener noreferrer">arXiv</a></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">November 26, 2025</div>
-                <div class="news-content">New preprint "HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal" now available on <a href="https://arxiv.org/abs/2511.21577" target="_blank" rel="noopener noreferrer">arXiv</a></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">November 8, 2025</div>
-                <div class="news-content">Won gold medal in Godai Jiu-jitsu Open Gi & No-Gi Championship 🥇</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">July 2025</div>
-                <div class="news-content">Nominated as NeurIPS Conference Ethics Reviewer for Research Track and Datasets and Benchmarks Track</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">June 2025</div>
-                <div class="news-content">Awarded <a href="https://srinstitute.utoronto.ca/news/schswartz-reisman-institute-announces-2025-26-graduate-fellows" target="_blank" rel="noopener noreferrer">SRI Graduate Fellowship</a> from Schwartz Reisman Institute</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">May 25, 2025</div>
-                <div class="news-content">New preprint "LDPKiT: Superimposing Remote Queries for Privacy-Preserving Local Model Training" now available on <a href="https://arxiv.org/abs/2405.16361" target="_blank" rel="noopener noreferrer">arXiv</a></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">September 2024</div>
-                <div class="news-content">Started PhD in Computer Engineering at University of Toronto</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">June 2024</div>
-                <div class="news-content">Successfully defended Master's thesis "Recovering Utility in LDP Schemes by Training with Noise^2" 🎓</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">April 2023</div>
-                <div class="news-content">Paper "Provenance of Training without Training Data" accepted to <a href="https://doi.org/10.1145/3543507.3583198" target="_blank" rel="noopener noreferrer">WWW '23</a></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">September 2022</div>
-                <div class="news-content">Joined TossLab as a graduate student </div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">June 2022</div>
-                <div class="news-content">Graduated with High Honours from University of Toronto (Bachelor of Applied Science in Computer Engineering, Minor in Artificial Intelligence, CGPA: 3.91/4.0) 🎓</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">June 2022</div>
-                <div class="news-content">Awarded Certificate of Distinction for Capstone Project (PixelArt), University of Toronto 🏆</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">May 2020</div>
-                <div class="news-content">Joined Intel (now altera) as Software Engineer Intern </div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">December 2019</div>
-                <div class="news-content">Paper "High-Level Synthesis Techniques to Generate Deeply Pipelined Circuits for FPGAs with Registered Routing" accepted to <a href="https://ieeexplore.ieee.org/abstract/document/8977856" target="_blank" rel="noopener noreferrer">ICFPT 2019</a></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">May 2019</div>
-                <div class="news-content">Awarded University of Toronto Excellence Summer Research Award (one of 4 recipients) 🏆</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">September 2017</div>
-                <div class="news-content">Started my Bachelor of Applied Science in Computer Engineering at University of Toronto</div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">June 2017</div>
-                <div class="news-content">Graduated from Nanchang No.2 High School Sino-Canadian Program with Governor General's Award 🎓🏅</div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-date">2024 — Present</div>
+                    <div class="timeline-content">
+                        <h3>PhD in Computer Engineering</h3>
+                        <p class="institution">University of Toronto</p>
+                        <p>Trustworthy machine learning and systems security. Supervised by <a href="https://www.eecg.toronto.edu/~lie/" target="_blank" rel="noopener noreferrer">Prof. David Lie</a>.</p>
+                        <div class="tag-list compact"><span>Trustworthy ML</span><span>Systems Security</span><span>Adversarial Robustness</span></div>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-date">2022 — 2024</div>
+                    <div class="timeline-content">
+                        <h3>MASc in Computer Engineering</h3>
+                        <p class="institution">University of Toronto · Grade: A+</p>
+                        <p><strong>Thesis:</strong> Recovering Utility in LDP Schemes by Training with Noise². Developed methods that improve model utility under local differential privacy while maintaining strong privacy guarantees.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-date">2017 — 2022</div>
+                    <div class="timeline-content">
+                        <h3>BASc in Computer Engineering, High Honours</h3>
+                        <p class="institution">University of Toronto · CGPA: 3.91 / 4.0</p>
+                        <p>Computer Engineering Specialist with a Minor in Artificial Intelligence.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <h3>High School Diploma</h3>
+                        <p class="institution">Nanchang No. 2 High School Sino-Canadian Program</p>
+                        <p>Graduated with the Governor General’s Academic Medal.</p>
+                    </div>
+                </article>
             </div>
         </div>
+    </section>
+
+    <section class="section section-dark" id="experience" aria-labelledby="experience-title">
+        <div class="page-shell">
+            <div class="section-heading">
+                <div>
+                    <h2 id="experience-title">Experience</h2>
+                </div>
+            </div>
+
+            <div class="experience-block">
+                <h3 class="subsection-title">Industry &amp; research</h3>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <div class="card-topline"><span>Intel Corporation (now Altera)</span><time>May 2020 — May 2021</time></div>
+                        <h4>Software Engineer</h4>
+                        <ul>
+                            <li>Enhanced LLVM-based HLS compiler toolchains for Intel FPGAs, improving performance and robustness.</li>
+                            <li>Shipped compiler features and analysis passes for complex FPGA workloads across device families.</li>
+                            <li>Diagnosed performance and resource regressions through weekly quality-of-results analysis.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card">
+                        <div class="card-topline"><span>Tsinghua University</span><time>May 2021 — April 2022</time></div>
+                        <h4>Research Intern</h4>
+                        <p class="muted">Institute for Network Sciences and Cyberspace · Supervisor: Prof. Qi Li</p>
+                        <ul>
+                            <li>Designed a privacy-preserving DNN ownership verification mechanism robust to model extraction.</li>
+                            <li>Evaluated security limitations and defense effectiveness across diverse adversarial threat models.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card">
+                        <div class="card-topline"><span>University of Toronto</span><time>May — August 2019</time></div>
+                        <h4>Summer Research Intern</h4>
+                        <p class="muted">Programmable Digital Systems Group · Supervisor: Prof. Jason H. Anderson</p>
+                        <ul>
+                            <li>Extended the LegUp High-Level Synthesis framework for register-rich FPGA architectures.</li>
+                            <li>Implemented LLVM backend improvements for deeper, higher-performance pipelines.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+
+            <div class="two-column-experience">
+                <div class="experience-block">
+                    <h3 class="subsection-title">Teaching</h3>
+                    <article class="experience-card compact-card">
+                        <div class="card-topline"><span>University of Toronto</span><time>2022 — Present</time></div>
+                        <h4>Teaching Assistant</h4>
+                        <ul>
+                            <li>ECE1508H1 Deep Generative Models</li>
+                            <li>ECE1508H1 Applied Deep Learning</li>
+                            <li>ECE568H1 Computer Security</li>
+                            <li>ECE244H1 Programming Fundamentals</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="experience-block">
+                    <h3 class="subsection-title">Academic service</h3>
+                    <article class="experience-card compact-card service-card">
+                        <dl>
+                            <div>
+                                <dt>Program Committee Member</dt>
+                                <dd><a href="https://trustworthy-ai-for-good.github.io/" target="_blank" rel="noopener noreferrer">AI4Good Workshop at ICML 2026</a>; NeurIPS 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Reviewer</dt>
+                                <dd><a href="https://trustworthy-ai-for-good.github.io/" target="_blank" rel="noopener noreferrer">AI4Good Workshop at ICML 2026</a>; NeurIPS 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Ethics Reviewer</dt>
+                                <dd>NeurIPS 2025 and 2026</dd>
+                            </div>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="project" aria-labelledby="project-title">
+        <div class="page-shell">
+            <div class="section-heading">
+                <div>
+                    <h2 id="project-title">Project</h2>
+                </div>
+            </div>
+
+            <section class="project-category" aria-labelledby="provenance-title">
+                <div class="category-heading"><h3 id="provenance-title">Safe &amp; Trustworthy AI Provenance</h3></div>
+                <div class="project-grid">
+                    <article class="project-card featured-project">
+                        <p class="project-year">2026 · Research</p>
+                        <h4>LambdaMark</h4>
+                        <p>Semantic audio watermarking designed for robustness and radioactivity.</p>
+                        <div class="card-footer"><span>PyTorch · Audio · Watermarking</span><a href="https://arxiv.org/abs/2606.21365" target="_blank" rel="noopener noreferrer" aria-label="Read the LambdaMark paper">Paper ↗</a></div>
+                    </article>
+                    <article class="project-card">
+                        <p class="project-year">2025 · Research</p>
+                        <h4>HMARK</h4>
+                        <p>A multi-bit semantic-latent watermark for diffusion models that enables provenance tracing while preserving visual quality.</p>
+                        <div class="card-footer"><span>PyTorch · Diffusion Models</span><a href="https://arxiv.org/abs/2512.00094" target="_blank" rel="noopener noreferrer" aria-label="Read the HMARK paper">Paper ↗</a></div>
+                    </article>
+                    <article class="project-card">
+                        <p class="project-year">2025 · Research</p>
+                        <h4>HarmonicAttack</h4>
+                        <p>An adaptive cross-watermark and cross-domain framework for assessing and strengthening psychoacoustic-based imperceptible audio watermark robustness against removal attacks.</p>
+                        <div class="card-footer"><span>PyTorch · Audio Security</span><a href="https://arxiv.org/abs/2511.21577" target="_blank" rel="noopener noreferrer" aria-label="Read the HarmonicAttack paper">Paper ↗</a></div>
+                    </article>
+                    <article class="project-card">
+                        <p class="project-year">2023 · Research</p>
+                        <h4>Provenance of Training</h4>
+                        <p>Privacy-preserving DNN ownership verification without access to the original training data, published at WWW ’23.</p>
+                        <div class="card-footer"><span>PyTorch · Model Ownership</span><a href="https://doi.org/10.1145/3543507.3583198" target="_blank" rel="noopener noreferrer" aria-label="Read the Provenance of Training paper">Paper ↗</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-category" aria-labelledby="automation-title">
+                <div class="category-heading"><h3 id="automation-title">AI for Software &amp; Systems Engineering</h3></div>
+                <div class="project-grid">
+                    <article class="project-card featured-project">
+                        <p class="project-year">2026 · ASE</p>
+                        <h4>RFC2TLA+</h4>
+                        <p>Extracting formal TLA+ models from RFC documents and verifying them through continuous feedback from large language models.</p>
+                        <div class="card-footer"><span>LLMs · TLA+ · Verification</span><a href="https://conf.researchr.org/details/ase-2026/ase-2026-research-track/157/RFC2TLA-Extracting-and-Verifying-Formal-Models-from-RFC-Documents-using-Continuous-" target="_blank" rel="noopener noreferrer" aria-label="View the RFC2TLA+ conference page">ASE ↗</a></div>
+                    </article>
+                    <article class="project-card">
+                        <p class="project-year">2025 · Course Research</p>
+                        <h4>Accurate &amp; Efficient CUDA Generation</h4>
+                        <p>A compiler-inspired reinforcement learning framework that optimizes Triton kernels for functional correctness and runtime speed using GRPO.</p>
+                        <div class="card-footer card-footer-links"><span>PyTorch · Triton · CUDA</span><span><a href="RL_CUDA_report.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a> <a href="RL_CUDA_presentation.pdf" target="_blank" rel="noopener noreferrer">Slides ↗</a></span></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-category" aria-labelledby="privacy-title">
+                <div class="category-heading"><h3 id="privacy-title">Privacy-Preserving ML</h3></div>
+                <div class="project-grid">
+                    <article class="project-card featured-project wide-project">
+                        <p class="project-year">2026 · IWAPS @ ARES</p>
+                        <h4>LDPKiT</h4>
+                        <p>A privacy-preserving model distillation framework that superimposes remote queries to generate approximately in-distribution samples, improving knowledge transfer under local differential privacy.</p>
+                        <div class="card-footer"><span>PyTorch · Local Differential Privacy</span><a href="https://arxiv.org/abs/2405.16361" target="_blank" rel="noopener noreferrer" aria-label="Read the LDPKiT paper">Paper ↗</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-category" aria-labelledby="other-title">
+                <div class="category-heading"><h3 id="other-title">Others</h3></div>
+                <div class="project-grid other-projects">
+                    <article class="project-card"><p class="project-year">2022 · Capstone</p><h4>PixelArt</h4><p>A synthetic graphical data-generation pipeline using Blender and neural networks; recipient of the University of Toronto Certificate of Distinction.</p><div class="card-footer"><span>Python · Blender · Computer Vision</span></div></article>
+                    <article class="project-card"><p class="project-year">2020 · Machine Learning</p><h4>RECTNet</h4><p>Transfer-learning models for facial detection and emotion recognition, trained on AffectNet.</p><div class="card-footer"><span>Python · Transfer Learning</span><a href="https://github.com/Kexin6/RECTnet" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2019 · Research</p><h4>LegUp High-Level Synthesis</h4><p>LLVM backend extensions and Stratix 10 support for deeper, higher-performance FPGA pipelines.</p><div class="card-footer"><span>C++ · LLVM · FPGA</span><a href="https://ieeexplore.ieee.org/abstract/document/8977856" target="_blank" rel="noopener noreferrer">Paper ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2019 · Software</p><h4>Mapping Service</h4><p>A full-stack C++ map with routing, geolocation, search, TSP optimization, and 3D street-view features.</p><div class="card-footer"><span>C++ · GTK · Algorithms</span><a href="https://github.com/Kexin6/mapping_service_front_back_end" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2019 · Embedded Systems</p><h4>Game of Life</h4><p>An interactive FPGA implementation controlled through board keys and a PS/2 keyboard.</p><div class="card-footer"><span>C · FPGA</span><a href="https://github.com/Kexin6/game_of_life" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2018 · Digital Design</p><h4>FPGA Music Game</h4><p>A hardware game integrating video input, PS/2 controls, VGA graphics, game logic, and audio output.</p><div class="card-footer"><span>Verilog · FPGA</span><a href="https://github.com/Kexin6/ECE241" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2018 · Web Application</p><h4>WeChat Mini Program</h4><p>A social video-sharing application with account, profile, and media-upload features.</p><div class="card-footer"><span>Java · HTML · CSS · JavaScript</span><a href="https://github.com/Kexin6/weChat-program-1.1" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2018 · Data</p><h4>Web Information Extractor</h4><p>A Python and regular-expression scraper for extracting and analyzing audience metrics.</p><div class="card-footer"><span>Python · Regular Expressions</span><a href="https://github.com/Kexin6/zergProject" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2018 · Design Research</p><h4>Mann Museum</h4><p>Research and concept development for a museum featuring virtual reality and high-dynamic-range imaging.</p><div class="card-footer"><span>Web · Research</span><a href="https://github.com/JasonLiDuo/web" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+                    <article class="project-card"><p class="project-year">2018 · Social Impact</p><h4>Learning Program for Haiti</h4><p>Led a team that designed an off-grid energy approach for delivering Khan Academy through a Haitian NGO.</p><div class="card-footer"><span>Project Management · Systems Design</span></div></article>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="page-shell contact-grid">
+            <div>
+                <h2 id="contact-title">Contact</h2>
+            </div>
+            <div class="contact-links">
+                <div class="contact-card">
+                    <span class="contact-icon" aria-hidden="true">@</span>
+                    <div><h3>Email</h3><p>cassiekx dot li at mail dot utoronto dot ca</p></div>
+                </div>
+                <a class="contact-card" href="https://github.com/Kexin6" target="_blank" rel="noopener noreferrer">
+                    <img src="Photos/github.png" alt="" width="32" height="32">
+                    <div><h3>GitHub</h3><p>@Kexin6 <span aria-hidden="true">↗</span></p></div>
+                </a>
+                <a class="contact-card" href="https://www.linkedin.com/in/kexin-li-cassie/" target="_blank" rel="noopener noreferrer">
+                    <img src="Photos/linkedin.jpg" alt="" width="32" height="32">
+                    <div><h3>LinkedIn</h3><p>Kexin Li (Cassie) <span aria-hidden="true">↗</span></p></div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="page-shell footer-content">
+        <p>© 2018–2026 Kexin Li. All rights reserved.</p>
+        <p>Last updated August 10, 2026 · <a href="#home">Back to top ↑</a></p>
     </div>
-</div>
+</footer>
 
-<div class="container" style="padding-top: 4%">
-    <h4>Skill Overview</h4>
-    <button type="button" class="btn btn-info text-white">C/C++</button>
-    <button type="button" class="btn btn-info text-white">Python</button>
-    <button type="button" class="btn btn-info text-white">Java</button>
-    <button type="button" class="btn btn-info text-white">Verilog</button>
-    <button type="button" class="btn btn-info text-white">ARM Assembly</button>
-    <button type="button" class="btn btn-info text-white">JavaScript</button>
-    <button type="button" class="btn btn-info text-white">SQL</button>
-    <button type="button" class="btn btn-info text-white">LLVM</button>
-    <button type="button" class="btn btn-info text-white">Linux</button>
-    <button type="button" class="btn btn-info text-white">Intel oneAPI</button>
-    <button type="button" class="btn btn-info text-white">Quartus</button>
-    <button type="button" class="btn btn-info text-white">MATLAB</button>
-</div>
-<div style="padding-top: 4%">
-    <div style="text-align: center; background-color: ghostwhite;color: black">
-        <div class="last-update-date">Last update on December 15, 2025.</div>
-        <div>Copyright © 2018 - 2025 Kexin Li. All rights reserved.</div>
-
-    </div>
-</div>
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="utility.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha384-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM9Xz5X8J4aAVj8Bk8DuCcvQ" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
